@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .section {
+            background-color: #ffffff;
+            padding: 20px;
+            margin-bottom: 20px;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid #ddd;
+        }
+
+        .section h2 {
+            margin-top: 0;
+        }
+
+        .job-card {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: #f9f9f9;
+            margin-bottom: 10px;
+            position: relative;
+            border: 1px solid #ddd;
+        }
+
+        .job-info {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .job-title {
+            font-weight: bold;
+        }
+
+        .glitch-box-shadow::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            box-shadow: 1px 0 4px rgba(0, 191, 255, 0.5), 0 0 3px rgba(255, 99, 71, 0.9), 0 0 2px rgba(0, 0, 255, 0.5);
+            animation: glitch 8s infinite;
+        }
+
+        @keyframes glitch {
+            78%, 83%, 91% {
+                transform: translate(1px, 2px);
+                box-shadow: 0 0 1px rgba(255, 0, 0, 0.5), 0 0 2px rgba(255, 99, 71, 0.5), 0 0 3px rgba(0, 0, 255, 0.5);
+            }
+            0%, 85%, 94% {
+                transform: translate(-1px, -3px);
+                box-shadow: 0 0 1px rgba(0, 191, 255, 0.5), 0 0 2px rgba(255, 99, 71, 0.8), 1px 1px 3px rgba(100, 0, 255, 0.9);
+            }
+            80%, 90% {
+                transform: translate(1px, 1px)
+                box-shadow: 4px 5px 1px rgba(0, 191, 255, 1), 6px 4px 2px rgba(255, 99, 71, 0.7), 10px 10px 3px rgba(0, 0, 255, 0.1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Alex Nye</h1>
+    </div>
+    <div class="container">
+        <div class="section glitch-box-shadow">
+            <p>I'm something of a relationship expert. I'm prequalified to be the SQL. I spit out algorithms as easily as hip hop rhythms. I got into software engineering because I wanted to make games, but let's not play them: my biggest flaws are finding the perfect jokes and variable names.</p>
+            <p>I like to pursue goals, but just because I've taken up martial arts during a sabbatical doesn't mean I've gotten kung-fused about data design. I like to think about fittin'is problem to just the right structure; I'll leave this pun as an exercise to the reader.</p>
+            <p>Also, I have 6.5 years of professional, full-stack web development experience, especially React and PostgreSQL.</p>
+        </div>
+
+        <div class="section glitch-box-shadow">
+            <h2>Professional software engineering roles</h2>
+
+            <div class="job-card glitch-box-shadow">
+                <div class="job-info">
+                    <h3 class="job-title">TrueCar</h3>
+                    <p class="job-duration">Nov 2020 - May 2023</p>
+                    <ul>
+                        <li>Developed web components for vehicle data and image galleries</li>
+                        <li>Engineered SQL solution to deduplicate 14 million images while preserving relational integrity</li>
+                        <li>Conducted data analysis to resolve complex data inconsistencies</li>
+                        <li>Implemented SEO improvements for web pages</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="job-card glitch-box-shadow">
+                <div class="job-info">
+                    <h3 class="job-title">Herrmann International</h3>
+                    <p class="job-duration">Jun 2018 - Nov 2020</p>
+                    <ul>
+                        <li>Maintained legacy personality test application while developing new products</li>
+                        <li>Implemented database triggers and materialized views for new feature development</li>
+                        <li>Became the team's go-to problem solver for complex bugs and database issues</li>
+                        <li>Contributed to all aspects of the software development lifecycle in a small team</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="job-card glitch-box-shadow">
+                <div class="job-info">
+                    <h3 class="job-title">All American Entertainment</h3>
+                    <p class="job-duration">Nov 2016 - Jun 2018</p>
+                    <ul>
+                        <li>Designed and implemented key features for an entertainment booking CRM</li>
+                        <li>Developed ETL SQL queries and query combinators to generate sales funnel visualizations aggregated by client / representative / time etc.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
